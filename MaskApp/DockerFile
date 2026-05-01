@@ -1,5 +1,5 @@
 # Use stable Python (NOT 3.13)
-FROM python:3.11-slim
+FROM python:3.12-slim
 
 # Prevent Python from writing pyc files & buffering
 ENV PYTHONDONTWRITEBYTECODE=1
