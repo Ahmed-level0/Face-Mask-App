@@ -4,7 +4,8 @@ import os
 from django.conf import settings
 
 # load model once (important for performance)
-model = YOLO("../Models/Face_Mask_Model.pt")
+MODEL_PATH = os.path.join(settings.BASE_DIR, "Models", "Face_Mask_Model.pt")
+model = YOLO(MODEL_PATH)
 
 
 def run_inference(image_path):
